@@ -1025,6 +1025,43 @@ a:hover {
 
 /* Single-page enhancements */
 html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.navbar{background:rgba(255,255,255,.97);box-shadow:0 2px 16px #00000013}.hero{min-height:78vh}.service-detail{scroll-margin-top:90px}.contact-form{max-width:800px;margin:auto}.navbar-menu a{white-space:nowrap}@media(max-width:768px){.navbar-menu{background:white}}
+
+/* Ajustements mobiles et identité visuelle GANABAT */
+:root{--font-heading:Arial,Helvetica,sans-serif;--font-body:Arial,Helvetica,sans-serif}
+body{overflow-x:hidden}img,video,iframe{max-width:100%}img{height:auto}
+.container{width:min(100% - 40px,1180px);margin-inline:auto}
+.navbar{z-index:2000}.navbar-brand{min-width:0}.navbar-brand img{object-fit:contain}
+.hero{background:linear-gradient(125deg,#152c48 0%,#2e5c9a 68%,#3c6da9 100%);min-height:620px}
+.hero::before{background:radial-gradient(circle at 90% 10%,rgba(245,166,35,.19),transparent 50%)}
+.hero-content{max-width:830px}.hero-title{letter-spacing:-.035em;line-height:1.1}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;text-align:center}
+.service-card,.stat-card{border-radius:12px}.service-card-image{object-fit:cover}
+.service-detail-content{align-items:center}
+@media(max-width:768px){
+ html{scroll-padding-top:75px}section[id]{scroll-margin-top:75px}
+ .container{width:calc(100% - 32px)}
+ .navbar{padding:10px 0;background:#fff}.navbar .container{padding:0 16px}
+ .navbar-brand{gap:8px}.navbar-brand img{height:42px;max-width:52px}
+ .navbar-brand .brand-name{font-size:19px}.navbar-brand .brand-tagline{font-size:11px}
+ .navbar-toggle{min-width:44px;min-height:44px;align-items:center;justify-content:center}
+ .navbar-menu{top:64px;left:0;right:0;max-height:calc(100dvh - 64px);overflow-y:auto;padding:14px 22px 24px;gap:4px;transform:translateY(-140%);visibility:hidden;pointer-events:none;transition:transform .22s ease,visibility .22s}
+ .navbar-menu.active{transform:translateY(0);visibility:visible;pointer-events:auto}
+ .navbar-menu li,.navbar-menu a{width:100%;display:block}.navbar-menu a{padding:13px 12px;font-size:16px}
+ .hero{min-height:0;padding:125px 18px 70px}.hero-title{font-size:clamp(31px,8vw,44px);line-height:1.13}
+ .hero-subtitle{font-size:16px;line-height:1.65}.hero-cta{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+ .hero-cta .btn{width:100%;max-width:420px;margin-inline:auto}
+ .section{padding:54px 0}.section-title h2{font-size:28px}.section-title p{font-size:15px}
+ .services-grid,.about-content,.about-stats,.footer-content{grid-template-columns:minmax(0,1fr)}
+ .service-detail-content,.service-detail-content[style]{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:25px}
+ .service-detail-image{width:100%;height:auto;max-height:330px;object-fit:cover}
+ .service-detail-text h2{font-size:26px}.service-detail-text h3{font-size:20px}
+ .service-card{min-width:0}.service-card-image{height:210px;width:100%}
+ .contact-form{padding:22px 16px}.form-group input,.form-group textarea,.form-group select{width:100%;max-width:100%;font-size:16px}
+ .cta-contact{align-items:stretch}.cta-contact a{overflow-wrap:anywhere}
+ .footer{padding-block:45px}.footer-content{gap:24px}
+}
+@media(max-width:390px){.container{width:calc(100% - 26px)}.hero{padding-inline:13px}.hero-title{font-size:30px}.navbar-brand .brand-tagline{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style></head>
 <body>
 <!-- Navigation -->
@@ -1037,7 +1074,7 @@ html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.navbar{backgrou
 <span class="brand-tagline">Peindre simplement</span>
 </div>
 </a>
-<ul class="navbar-menu">
+<ul class="navbar-menu" id="menu-principal">
 <li><a href="#accueil">Accueil</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -1052,7 +1089,7 @@ html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.navbar{backgrou
 <!-- Hero Section -->
 <section class="hero" id="accueil">
 <div class="hero-content">
-<h1 class="hero-title">Votre Expert en Peinture et Rénovation</h1>
+<h1 class="hero-title">Peinture et rénovation à Saint-Malo</h1>
 <p class="hero-subtitle">
         GANABAT vous accompagne dans tous vos projets de peinture, ravalement de façade et isolation thermique. 
         Un savoir-faire professionnel au service de votre confort.
@@ -1068,7 +1105,7 @@ html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.navbar{backgrou
 <div class="container">
 <div class="section-title">
 <h2>Nos Services</h2>
-<p>Des solutions complètes et professionnelles pour tous vos besoins en rénovation</p>
+<p>Peinture intérieure et extérieure, façades et isolation : des travaux adaptés à votre bâtiment.</p>
 </div>
 <div class="services-grid">
 <!-- Peinture Service -->
@@ -1433,7 +1470,7 @@ html{scroll-padding-top:92px}section[id]{scroll-margin-top:92px}.navbar{backgrou
 </div>
 </div>
 <div class="footer-bottom">
-<p>© 2025 GANABAT. Tous droits réservés. | Peinture, Ravalement &amp; Isolation Thermique à Saint-Malo</p>
+<p>© 2026 GANABAT. Tous droits réservés. | Peinture, Ravalement &amp; Isolation Thermique à Saint-Malo</p>
 </div>
 </div>
 </footer>
@@ -1454,6 +1491,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (navbarToggle && navbarMenu) {
     navbarToggle.addEventListener('click', function() {
       navbarMenu.classList.toggle('active');
+      navbarToggle.setAttribute('aria-expanded', String(navbarMenu.classList.contains('active')));
       
       // Animate hamburger icon
       const spans = navbarToggle.querySelectorAll('span');
@@ -1473,6 +1511,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
       link.addEventListener('click', function() {
         navbarMenu.classList.remove('active');
+        navbarToggle.setAttribute('aria-expanded', 'false');
         const spans = navbarToggle.querySelectorAll('span');
         spans[0].style.transform = 'none';
         spans[1].style.opacity = '1';
@@ -1673,7 +1712,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ============================================
   console.log('%cGANABAT', 'font-size: 24px; font-weight: bold; background: linear-gradient(135deg, #F5A623 0%, #E74C3C 50%, #2E5C9A 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
   console.log('%cPeindre simplement', 'font-size: 14px; color: #6B7280;');
-  console.log('Website by Antigravity AI');
+
   
 });
 
